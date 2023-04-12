@@ -26,6 +26,7 @@ pre{
 }
 pre#htmlPre{
     margin: 10px;
+    margin-bottom: 40px;
     padding: 10px;
     /* width:100%; */
 }
