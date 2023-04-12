@@ -9,5 +9,6 @@
     "shellscript",
     "tex"
   ],
-  "cSpell.language": "en-UK,en-GB,en,en-US,lorem"
+  "cSpell.language": "en-UK,en-GB,en,en-US,lorem",
+  "livePreview.defaultPreviewPath": "/add_user_to_sudo_list.html"
 }
