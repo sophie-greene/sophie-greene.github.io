@@ -7,12 +7,9 @@
     overflow: hidden;
     padding: 20px;
     margin: 10px;
-
     border-radius: 7px;
-
     display:inline-block;
 }
-
 #latex-code{
     margin: 20px;
     padding: 10px;
