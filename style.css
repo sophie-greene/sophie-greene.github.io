@@ -1,4 +1,4 @@
-/* .shell {
+.shell {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     font-size: 17px;
     font-weight: bolder;
@@ -11,7 +11,7 @@
     border-radius: 7px;
 
     display:inline-block;
-} */
+}
 
 #latex-code{
     margin: 20px;
