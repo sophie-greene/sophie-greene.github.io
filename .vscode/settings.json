@@ -4,7 +4,9 @@
     "visualise"
   ],
   "cSpell.enableFiletypes": [
-    "html"
+    "html",
+    "shellscript",
+    "tex"
   ],
-  "cSpell.language": "en-UK,en-GB"
+  "cSpell.language": "en-UK,en-GB,en"
 }
