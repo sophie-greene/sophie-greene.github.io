@@ -1,7 +1,8 @@
 fetch('html/nav.html')
 .then(res => res.text())
 .then(text => {
-    let element =  document.getElementById('navbar');
-    //copy the html into a new div
-    document.getElementById('navbar').innerHTML = text
-});
+    let oldelem = document.querySelector("script#replace_with_navbar");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
