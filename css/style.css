@@ -13,10 +13,19 @@ kbd.macKbd{
     border:solid 2px #dedadade;
     text-transform: uppercase;
 }
-/* img_block{
-    margin:10px;
-    display:block !important;
-    border-radius: 4px;
-    width: 400px;
-
-} */
+embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
