@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<title>
-		Remove Windows 10 bulit in apps
+		Linux Tips
 	</title>
-	<script type="text/javascript" src="../js/nav.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../css/prism.css" />
 	<meta charset="utf-8">
@@ -12,22 +12,43 @@
 		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
-	<div class='container'>
-		<script id="replace_with_navbar" src="../js/nav.js"></script>
-		<div class='jumbotron'>
+	<div class="container-fluid" style="width:80%; min-width: 500px;">
+		<script id="navbar" src="../js/nav.js"></script>
+		<div>
 			<header>
-				<h1>Remove Windows 10 bulit in apps</h1>
+				<h1>Linux Tips</h1>
 				<header>
 					<section>
 						<article>
 							<p>
-								This could be done by running the Windows PowerShell in administrator mode
+								Find file types
 							</p>
-							<div>
-								<code>
-									> &nbsp;&nbsp;Get-AppxPackage *AppName* | Remove-AppxPackage
+							<pre>
+								<code class="language-bash">
+									find / -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u
 								</code>
-							</div>
+							</pre>
+						</article>
+						<article>
+							<p>
+								Find a specific file type and copy
+							</p>
+							<pre>
+								<code class="language-bash">
+									find / -iname *.epub -exec cp {} epub/ \;
+								</code>
+							</pre>
+							</p>
+						</article>
+						<article>
+							<p>
+								Find a specific file type and copy if not already in destination folder
+							</p>
+							<pre>
+								<code class="language-bash">
+									find / -iname *.epub -exec cp -n {} epub/ \;
+								</code>
+							</pre>
 						</article>
 					</section>
 					<footer>
